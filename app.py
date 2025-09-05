@@ -124,7 +124,7 @@ if st.sidebar.button("Cari"):
 # HALAMAN: PENCARIAN
 # ===============================
 if menu == "🔍 Pencarian":
-    st.title("🚗 Pusat Informasi Pajak Kendaraan (ASN PPU)")
+    st.title("🚗 Cari Data Kendaraan Bermotor Milik ASN PPU")
     colA, colB = st.columns(2)
     with colA:
         if st.button("🔄 Reset CSV (hasil_pencarian.csv)"):
@@ -202,4 +202,5 @@ elif menu == "📂 Laporan Tersimpan":
     data=df_hasil_now.to_csv(index=False).encode("utf-8"),
     file_name="hasil_pencarian.csv",
     mime="text/csv"
+
 )
